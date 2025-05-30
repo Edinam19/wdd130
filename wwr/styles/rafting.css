@@ -90,6 +90,10 @@ p{
   float: left;
   margin: auto;
 }
+.happy {
+  float: right;
+  margin-left: 20px;
+}
 
 section {
   background: #fff;
