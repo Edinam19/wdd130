@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Us page for White Water Rafting Adventures.">
+  <meta name="author" content="Dunoo Edinam Angela">
+  <title>Contact Us | White Water Rafting</title>
+  <!-- Google Fonts Example -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.webp" alt="Rafting Site Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="contact-container">
+    <main>
+      <h1 style="text-align: center; font-size: 2.5em; color: blue;">Contact Us</h1>
+      <div style="margin-top: 2em;">
+        <h2>Send Us a Message</h2>
+        <p>White Water Rafting</p>
+        <p>Phone: 053-579-7347</p>
+        <p>Email: <a href="mailto:edunooangela@gmail.com">edunooangela@gmail.com</a></p>
+      </div>
+    </main>
+  </div>
+  <div class="map"> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50410.0659775455!2d-0.19332281379866842!3d5.677755550580649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1749231012471!5m2!1sen!2sgh"
+     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <Section>
+    <div class="happy employees"></div>
+    <h3 style="text-align: center; font-size: 2em; color: blue; font-family: cursive;">Edinam's Safe and Sound Rafting Company | Guides and Staff</h3>
+    <div class="happy-employees swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/employee1.webp" alt="Jolly">
+            <figcaption style="font-weight: 600;">JOLLY</figcaption>
+                        <p>Raft Guide</p>
+                        </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/employee2.webp" alt="Ginny">
+            <figcaption style="font-weight:600;">GINNY</figcaption>
+            <p>Raft Guide</p>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/employee3.webp" alt="Max">
+            <figcaption style="font-weight: 600;">MAX</figcaption>
+            <p>Raft Guide</p>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/employee4.webp" alt="Aria">
+            <figcaption style="font-weight: 600;">ARIA</figcaption>
+            <p>Raft Guide</p>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images/employee5.webp" alt="Willow">
+            <figcaption style="font-weight: 600;">WILLOW</figcaption>
+            <p>Raft Guide</p>
+          </figure>
+        </div>
+      </div>
+      <!-- Add Pagination if needed -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        new Swiper('.happy-employees.swiper', {
+          direction: 'vertical',
+          slidesPerView: 1,
+          spaceBetween: 30,
+          mousewheel: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          loop: true
+        });
+      });
+    </script>
+    <style>
+    .happy-employees {
+      width: 300px;
+      height: 400px;
+      margin: 0 auto;
+    }
+    .happy-employees .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .happy-employees figure {
+      margin: 0;
+      text-align: center;
+    }
+    .happy-employees img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    </style>
+  </Section>
+  
+   <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                      <label for="mail">Email:</label>
+                      <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                  </ul>
+            </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 White Water Rafting Adventures | Dunoo Edinam Angela</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+      <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+      <a href="https://linkedin.com"><img src="images/linkedIn.webp" alt="LinkedIn"></a>
+    </nav>
+  </footer>
+</body>
+</html>
